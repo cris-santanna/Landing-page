@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 html{
     width: 100vw;
     height: 100vh;
@@ -13,6 +14,7 @@ html{
     color: white;
     font-family: 'Lato', sans-serif;
 }
+
 
 body{
     background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/images/imd.jpg);
@@ -28,6 +30,7 @@ header{
     background-color: rgba(22, 22, 22, 0.2);
 }
 
+
 .menu-content{
     text-transform: uppercase;
     height: 100%;
@@ -39,8 +42,7 @@ header{
 
 .logo{
     font-size: 1.8rem;
-    letter-spacing: 0.4rem;
-    cursor: pointer;
+    letter-spacing: 0.4rem; 
 }
 
 .menu-content .list-itens{
@@ -57,8 +59,9 @@ header{
     position: relative;
 }
 
+
 .menu-content .list-itens a:before{
-    content: '';
+    content: ' ';
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -68,7 +71,7 @@ header{
     transition: all 1.5s ease;
 }
 
-.menu-content .list-itens a:hover::before{
+.menu-content .list-itens a:hover:before{
     width: 100%;
 }
 
@@ -79,12 +82,14 @@ main{
     align-items: center;
 }
 
-.menu-content{
+
+.main-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
 }
+    
 
 .primary-text{
     width: 850px;
@@ -92,13 +97,14 @@ main{
     margin-bottom: 2rem;
     text-align: center;
 }
-
+    
 .second-text{
     margin-bottom: 7rem;
     font-size: 2rem;
     color: rgb(165, 165, 165);
     text-transform: uppercase;
 }
+
 
 .btns{
     display: flex;
@@ -122,7 +128,7 @@ main{
 }
 
 .btns button:before{
-    content: '';
+    content: ' ';
     border-radius: 20px;
     bottom: 0;
     left: 0;
@@ -131,7 +137,7 @@ main{
     height: 60px;
     background-color: rgb(61, 61, 61);
     z-index: -1;
-    transition: 1s;
+    transition: 1.5s;
 }
 
 .btns button:hover{
@@ -142,4 +148,9 @@ main{
 .btns button:hover:before{
     width: 100%;
 }
+
+
+
+
+
 
